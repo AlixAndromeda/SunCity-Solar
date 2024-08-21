@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunCity Solar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="SunCity Solar Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <img src="Logo.png">
+            <h1>Powering El Paso with Solar Energy</h1>
+            <p>Renewable, clean, and most importantly... CHEAP!</p>
+            <a href="#services" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About SunCity Solar</h2>
+        <p>At SunCity Solar, we are dedicated to providing sustainable and cost-effective solar solutions to homes and businesses in El Paso. Our mission is to help you harness the power of the sun, save on energy costs, and contribute to a cleaner environment.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Solar Brokering</h3>
+            <p>We connect you with trusted contractors to get your solar panels installed seamlessly.</p>
+        </div>
+        <div class="service">
+            <h3>In-house Installations</h3>
+            <p>In the future, we will provide expert installation services directly to you.</p>
+        </div>
+        <div class="service">
+            <h3>Solar Farm Development</h3>
+            <p>Our long-term vision is to build a solar farm to power the El Paso grid with clean energy.</p>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+        <h2>Calculate Your Savings</h2>
+        <div class="calculator">
+            <label for="current-bill">Current Electricity Bill ($):</label>
+            <input type="number" id="current-bill">
+            <label for="savings-rate">Estimated Savings Rate (%):</label>
+            <input type="number" id="savings-rate" value="20">
+            <button onclick="calculateSavings()">Calculate</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Want to learn more about solar energy? Reach out to us!</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:Ali_Al_Ani@outlook.com">Ali_Al_Ani@outlook.com</a></p>
+            <p>Phone: <a href="tel:+353851065328">+353 85 106 5328</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SunCity Solar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to the external PyScript file -->
+    <py-script src="calculator.py"></py-script>
+</body>
+</html>
