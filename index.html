@@ -3,74 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SunCity Solar</title>
+    <title>Solar Energy Solutions</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/Logo.png" alt="SunCity Solar Logo">
-            <span class="company-name">SunCity Solar</span>
+            <img src="images/index/Logo.png" alt="Solar Logo">
+            <div class="company-name">SunCity Solar</div>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-        
 
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
-            <img src="images/Logo.png">
-            <h1>Powering El Paso with Solar Energy</h1>
-            <p>Renewable, clean, and most importantly... CHEAP!</p>
-            <a href="#services" class="cta-button">Learn More</a>
+            <img src="images/index/Logo.png">
+
+            <h1>Power Your Life with Solar Energy</h1>
+            <p>Clean, Efficient, and Renewable Energy Solutions</p>
+            
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <h2>About SunCity Solar</h2>
-        <p>At SunCity Solar, we are dedicated to providing sustainable and cost-effective solar solutions to homes and businesses in El Paso. Our mission is to help you harness the power of the sun, save on energy costs, and contribute to a cleaner environment.</p>
-    </section>
-
-    <section class="our-services" id="services">
+    <!-- Our Services Section -->
+    <section id="services" class="our-services">
         <h2>Our Services</h2>
-        <div class="services-list">
-            <div class="service">
-                <h3>Solar Panel Installation</h3>
-                <p>High-quality installation services for residential and commercial properties.</p>
+        <div class="service-box">
+            <h3>What We Do</h3>
+            <p>We offer a wide range of solar energy services tailored to meet the needs of both residential and commercial clients.</p>
+            <ul>
+                <li><strong>Residential Solar Installation:</strong> Power your home with clean, renewable energy. Our systems are designed to reduce your electricity bills and carbon footprint.</li>
+                <li><strong>Commercial Solar Solutions:</strong> Transform your business with solar energy. We provide customized solar solutions that meet the energy demands of commercial enterprises.</li>
+                <li><strong>Solar Maintenance & Support:</strong> We offer comprehensive maintenance and support services to ensure your solar system operates at peak efficiency.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2>Pricing Plans</h2>
+        <p>Choose a pricing plan that suits your needs and budget.</p>
+        <div class="pricing-container">
+            <div class="pricing-box">
+                <h3>Basic Plan</h3>
+                <div class="price">$9,999</div>
+                <ul>
+                    <li>5 kW System</li>
+                    <li>Installation Included</li>
+                    <li>Monitoring Software</li>
+                </ul>
+                <a href="#" class="select-plan">Select Plan</a>
             </div>
-            <div class="service">
-                <h3>Maintenance & Repair</h3>
-                <p>Reliable maintenance and repair services to ensure your system runs smoothly.</p>
+            <div class="pricing-box featured">
+                <h3>Standard Plan</h3>
+                <div class="price">$14,999</div>
+                <ul>
+                    <li>10 kW System</li>
+                    <li>Installation Included</li>
+                    <li>24/7 Support</li>
+                    <li>Monitoring Software</li>
+                </ul>
+                <a href="#" class="select-plan">Select Plan</a>
             </div>
-            <div class="service">
-                <h3>Energy Audits</h3>
-                <p>Comprehensive energy audits to help you optimize energy consumption and savings.</p>
+            <div class="pricing-box">
+                <h3>Premium Plan</h3>
+                <div class="price">$19,999</div>
+                <ul>
+                    <li>15 kW System</li>
+                    <li>Installation Included</li>
+                    <li>Premium Support</li>
+                    <li>Monitoring Software</li>
+                    <li>Battery Backup</li>
+                </ul>
+                <a href="#" class="select-plan">Select Plan</a>
             </div>
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="images/aboutus/aliheadShot.jpg" alt="Founder">
+            </div>
+            <div class="profile-info">
+                <h3>Ali Al-Ani</h3>
+                <p>Founder & CEO</p>
+                <p>With over 20 years of experience in renewable energy, Ali is dedicated to making solar energy accessible for everyone.</p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-image">
+                <img src="images/aboutus/haider.jpg" alt="Co-Founder">
+            </div>
+            <div class="profile-info">
+                <h3>Haider Jalil</h3>
+                <p>Founder & Lead Engineer</p>
+                <p>Haider is an expert in solar technology and innovation, leading the charge in developing cutting-edge solar solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>Have questions? Want to learn more about solar energy? Reach out to us!</p>
+        <p>If you have any questions or would like to learn more about our services, feel free to get in touch.</p>
         <div class="contact-info">
-            <p>Email: <a href="mailto:Ali_Al_Ani@outlook.com">Ali_Al_Ani@outlook.com</a></p>
-            <p>Phone: <a href="tel:+353851065328">+353 85 106 5328</a></p>
+            <p>Email: <a href="mailto:info@solarenergy.com">info@solarenergy.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (915) </a></p>
+            <p>Address: 123 Solar Avenue, Sun City, CA 90210</p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 SunCity Solar. All Rights Reserved.</p>
+        <p>&copy; 2024 Solar Energy Solutions. All rights reserved.</p>
     </footer>
 
-    <!-- Link to the external PyScript file -->
-    <py-script src="calculator.py"></py-script>
 </body>
 </html>

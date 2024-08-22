@@ -63,7 +63,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background: url('solar-hero.jpg') no-repeat center center/cover;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,4 +248,121 @@ footer p {
 
 .profile-info a:hover {
     color: #4CAF50;
+}
+
+.pricing {
+    padding: 80px 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 30%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-box.featured {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.pricing-box.featured .price {
+    color: #FFDD00;
+}
+
+.pricing-box h3 {
+    font-size: 1.8em;
+    color: inherit;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.pricing-box .price {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.pricing-box ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    color: inherit;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.pricing-box ul li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.pricing-box ul li::before {
+    content: '✔';
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.pricing-box.featured ul li::before {
+    color: #FFDD00;
+}
+
+.select-plan {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.pricing-box.featured .select-plan {
+    background-color: #FFDD00;
+    color: #333;
+}
+
+.select-plan:hover {
+    background-color: #333;
+}
+
+.pricing-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+    .pricing-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
